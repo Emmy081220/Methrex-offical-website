@@ -23,6 +23,8 @@
 
     <meta name="robots" content="noindex, nofollow, nosnippet, noarchive, noindex, nofollow, noimageindex, noarchive">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -137,7 +139,7 @@
                         identity document.<br /></p><a href="https://play.google.com/store/apps/details?id=com.methrex.methrex&pli=1" target="_blank"
                         class="button-green mobile-hidden w-button">Download App</a>
                     <div class="mobile-hide"><a href="https://play.google.com/store/apps/details?id=com.methrex.methrex&pli=1"
-                            class="link-block-9 w-inline-block"><img
+                            class="link-block-9 w-inline-block"><img 
                                 src="https://assets-global.website-files.com/62f0d76a37f05d8478f37b66/64078aa15d4be1c88245883b_google-play-badge.png"
                                 loading="lazy" alt="" class="image-29" /></a>
                         <div class="div-block-22"></div>
@@ -466,6 +468,19 @@
                 if ((e.ctrlKey && (e.key === 'u' || e.key === 'U')) || e.key === 'F12') {
                     e.preventDefault();
                 }
+            });
+        </script>
+
+        <script>
+            // Initialize ScrollReveal
+            ScrollReveal().reveal('.img-hero', {
+                origin: 'bottom', // Set the origin to the bottom
+                distance: '150px', // Move the element 20px upwards during the animation
+                duration: 1000, // Animation duration in milliseconds
+                delay: 500, // Delay before the animation starts
+                easing: 'ease-in-out', // Animation easing function
+                opacity: 0, // Starting opacity (0 means the element is fully transparent initially)
+                scale: 1 // Starting scale (1 means no scaling initially)
             });
         </script>
 
