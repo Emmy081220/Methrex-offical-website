@@ -68,7 +68,7 @@
                             <li class="mobile-nav-item"><a href="#"
                                     class="nav-link-4">Contact Us</a></li>
 
-                            <li class="mobile-nav-item"><a href="#"
+                            <li class="mobile-nav-item"><a href="#faq"
                                     class="nav-link-4">FAQs</a></li>
 
                             
@@ -103,10 +103,10 @@
                                         class="nav-link-4">About us</a>
                                 </li>
 
-                                <li class="mobile-nav-item"><a href="#"
+                                <li class="mobile-nav-item"><a href="https://wa.me/+2349061450893" target="_blank"
                                         class="nav-link-4">Contact Us</a></li>
 
-                                <li class="mobile-nav-item"><a href="#"
+                                <li class="mobile-nav-item"><a href="#faq"
                                         class="nav-link-4">FAQs</a></li>
                                 
                                 <li class="mobile-margin-top-10">
@@ -402,7 +402,78 @@
         </div>
     </section>
     
-    
+    <section class="section-12" id="faq">
+        <div class="container-20">
+            <h1 class="head">Frequently Asked Questions<br /></h1>
+
+            <div class="faq-container">
+                <div class="faq active">
+                    <h3 class="faq-title">
+                        What is Methrex?
+                    </h3>
+        
+                    <p class="faq-text">
+                        Methrex is a mobile app that lets you send and receive money anywhere in the world.
+                    </p>
+        
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+        
+                <div class="faq">
+                    <h3 class="faq-title">
+                        I just downloaded Methrex, how do i create an account?
+                    </h3>
+                    <p class="faq-text">
+                        After you downloaded the app from the app store or Google play store.. signup using your name, email, and verify your account using a valid ID
+                    </p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+        
+                <div class="faq">
+                    <h3 class="faq-title">
+                        Can I use my USD account on Upwork, Deel, Fiverr, or Payoneer?
+                    </h3>
+                    <p class="faq-text">
+                        Yes, it can be used on any platform that accepts USD bank account.
+                    </p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+        
+                <div class="faq">
+                    <h3 class="faq-title">
+                        Does my USD bank account support ACH deposits
+                    </h3>
+                    <p class="faq-text">
+                        Yes it does.
+                    </p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="faq">
+                    <h3 class="faq-title">
+                        Is methrex secure?
+                    </h3>
+                    <p class="faq-text">
+                        Yes! We utilise industry-standard security protocols that leverage encryption for transferring data. Encryption helps create a secure environment for the information being transferred, and we ensure that account data is never stored on your device!
+                    </p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+    </section>
     
     <footer>
         <div class="content">
@@ -435,6 +506,20 @@
                     <li><a href="#">Become a partner</a></li>
                     <li><a href="#">LLC</a></li>
                 </ul>
+                <ul class="box">
+                    <li class="link_name">Account</li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Subsidaries</a></li>
+                    <li><a href="#">Become a partner</a></li>
+                    <li><a href="#">LLC</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Account</li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Subsidaries</a></li>
+                    <li><a href="#">Become a partner</a></li>
+                    <li><a href="#">LLC</a></li>
+                </ul>
                 
                 <ul class="box input-box">
                     <li class="link_name">Subscribe</li>
@@ -453,6 +538,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62f0d76a37f05d8478f37b66"
         type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
@@ -469,6 +555,14 @@
                     e.preventDefault();
                 }
             });
+
+            const toggles = document.querySelectorAll('.faq-toggle')
+
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    toggle.parentNode.classList.toggle('active')
+                })
+            })
         </script>
 
         <script>
@@ -482,6 +576,8 @@
                 opacity: 0, // Starting opacity (0 means the element is fully transparent initially)
                 scale: 1 // Starting scale (1 means no scaling initially)
             });
+
+
         </script>
 
     <body>
